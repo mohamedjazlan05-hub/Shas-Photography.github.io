@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Photography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="description" content="Professional photography portfolio showcasing portraits, events, products, and lifestyle work.">
+</head>
+<body>
+
+      <header>
+        <div class="container navbar">
+          <a class="brand" href="index.html">
+            <div class="brand-logo"></div>
+            <h1>Contact</h1>
+          </a>
+          <nav class="navlinks">
+            <a href="index.html" >Home</a>
+            <a href="about.html" >About</a>
+            <a href="portfolio.html" >Portfolio</a>
+            <a href="portraits.html" >Portraits</a>
+            <a href="events.html" >Events</a>
+            <a href="products.html" >Products</a>
+            <a href="lifestyle.html" >Lifestyle</a>
+            <a href="pricing.html" >Pricing</a>
+            <a href="testimonials.html" >Testimonials</a>
+            <a href="contact.html" class="badge">Contact</a>
+          </nav>
+          <button class="burger" onclick="toggleMenu()" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </header>
+
+
+  <section class="section">
+    <div class="container grid grid-2">
+      <div>
+        <h3>Contact / Booking</h3>
+        <p class="lead">Tell me about your shoot and I’ll get back with a quote and availability.</p>
+        <form action="mailto:you@email.com" method="post" enctype="text/plain">
+          <input required name="name" placeholder="Your name"/>
+          <input required name="email" type="email" placeholder="Email address"/>
+          <input name="phone" placeholder="Phone / WhatsApp"/>
+          <textarea name="message" placeholder="Tell me about your project (date, location, style)"></textarea>
+          <button class="cta" type="submit">Send Request</button>
+        </form>
+      </div>
+      <div class="card">
+        <h4 style="margin-bottom:10px">Other ways to reach me</h4>
+        <p>Email: <a href="mailto:you@email.com">you@email.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/60123456789" target="_blank">+60 12-345 6789</a></p>
+        <p>Instagram: <a href="https://instagram.com/yourstudio" target="_blank">@yourstudio</a></p>
+        <div style="height:12px"></div>
+        <img src="assets/images/photo6.jpg" alt="Studio sample"/>
+      </div>
+    </div>
+  </section>
+
+
+      <footer class="footer">
+        <div class="container row">
+          <small>© <span data-year></span> Your Studio Name — All rights reserved.</small>
+          <div style="display:flex; gap:12px;">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://tiktok.com" target="_blank">TikTok</a>
+            <a href="mailto:you@email.com">Email</a>
+          </div>
+        </div>
+      </footer>
+      <div class="lightbox" onclick="closeLightbox(event)">
+        <img alt="preview" src=""/>
+      </div>
+      <script src="assets/js/main.js"></script>
+
+</body>
+</html>

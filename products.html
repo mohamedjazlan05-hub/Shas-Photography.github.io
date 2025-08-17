@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products — Photography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="description" content="Professional photography portfolio showcasing portraits, events, products, and lifestyle work.">
+</head>
+<body>
+
+      <header>
+        <div class="container navbar">
+          <a class="brand" href="index.html">
+            <div class="brand-logo"></div>
+            <h1>Products</h1>
+          </a>
+          <nav class="navlinks">
+            <a href="index.html" >Home</a>
+            <a href="about.html" >About</a>
+            <a href="portfolio.html" >Portfolio</a>
+            <a href="portraits.html" >Portraits</a>
+            <a href="events.html" >Events</a>
+            <a href="products.html" class="badge">Products</a>
+            <a href="lifestyle.html" >Lifestyle</a>
+            <a href="pricing.html" >Pricing</a>
+            <a href="testimonials.html" >Testimonials</a>
+            <a href="contact.html" >Contact</a>
+          </nav>
+          <button class="burger" onclick="toggleMenu()" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </header>
+
+
+  <section class="section">
+    <div class="container">
+      <h3>Products</h3>
+      <p class="lead">Aesthetic product photography designed to elevate your brand.</p>
+      <div class="grid grid-3">
+        <div class="card"><img onclick="openLightbox(this.src)" src="assets/images/photo4.jpg" alt="Product"/></div>
+        <div class="card"><img onclick="openLightbox(this.src)" src="assets/images/photo11.jpg" alt="Product"/></div>
+        <div class="card"><img onclick="openLightbox(this.src)" src="assets/images/photo12.jpg" alt="Product"/></div>
+      </div>
+    </div>
+  </section>
+
+
+      <footer class="footer">
+        <div class="container row">
+          <small>© <span data-year></span> Your Studio Name — All rights reserved.</small>
+          <div style="display:flex; gap:12px;">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://tiktok.com" target="_blank">TikTok</a>
+            <a href="mailto:you@email.com">Email</a>
+          </div>
+        </div>
+      </footer>
+      <div class="lightbox" onclick="closeLightbox(event)">
+        <img alt="preview" src=""/>
+      </div>
+      <script src="assets/js/main.js"></script>
+
+</body>
+</html>

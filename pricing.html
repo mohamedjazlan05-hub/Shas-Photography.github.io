@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing — Photography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="description" content="Professional photography portfolio showcasing portraits, events, products, and lifestyle work.">
+</head>
+<body>
+
+      <header>
+        <div class="container navbar">
+          <a class="brand" href="index.html">
+            <div class="brand-logo"></div>
+            <h1>Pricing</h1>
+          </a>
+          <nav class="navlinks">
+            <a href="index.html" >Home</a>
+            <a href="about.html" >About</a>
+            <a href="portfolio.html" >Portfolio</a>
+            <a href="portraits.html" >Portraits</a>
+            <a href="events.html" >Events</a>
+            <a href="products.html" >Products</a>
+            <a href="lifestyle.html" >Lifestyle</a>
+            <a href="pricing.html" class="badge">Pricing</a>
+            <a href="testimonials.html" >Testimonials</a>
+            <a href="contact.html" >Contact</a>
+          </nav>
+          <button class="burger" onclick="toggleMenu()" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </header>
+
+
+  <section class="section">
+    <div class="container">
+      <h3>Pricing & Packages</h3>
+      <p class="lead">Transparent packages tailored to your needs. Custom quotes available.</p>
+      <div class="pricing">
+        <div class="tier">
+          <h4>Basic</h4>
+          <div class="price">RM299</div>
+          <ul>
+            <li>1 hour session</li>
+            <li>15 edited photos</li>
+            <li>Online gallery</li>
+          </ul>
+          <a class="cta" href="contact.html">Book Basic</a>
+        </div>
+        <div class="tier" style="border-color:var(--accent)">
+          <h4>Standard</h4>
+          <div class="price">RM599</div>
+          <ul>
+            <li>2 hour session</li>
+            <li>35 edited photos</li>
+            <li>Online gallery + social crops</li>
+          </ul>
+          <a class="cta" href="contact.html">Book Standard</a>
+        </div>
+        <div class="tier">
+          <h4>Premium</h4>
+          <div class="price">RM999</div>
+          <ul>
+            <li>4 hour session</li>
+            <li>80 edited photos</li>
+            <li>Priority delivery + prints</li>
+          </ul>
+          <a class="cta" href="contact.html">Book Premium</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      <footer class="footer">
+        <div class="container row">
+          <small>© <span data-year></span> Your Studio Name — All rights reserved.</small>
+          <div style="display:flex; gap:12px;">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://tiktok.com" target="_blank">TikTok</a>
+            <a href="mailto:you@email.com">Email</a>
+          </div>
+        </div>
+      </footer>
+      <div class="lightbox" onclick="closeLightbox(event)">
+        <img alt="preview" src=""/>
+      </div>
+      <script src="assets/js/main.js"></script>
+
+</body>
+</html>

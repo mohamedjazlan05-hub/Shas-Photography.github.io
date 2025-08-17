@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Photography — Photography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="description" content="Professional photography portfolio showcasing portraits, events, products, and lifestyle work.">
+</head>
+<body>
+
+      <header>
+        <div class="container navbar">
+          <a class="brand" href="index.html">
+            <div class="brand-logo"></div>
+            <h1>Your Photography</h1>
+          </a>
+          <nav class="navlinks">
+            <a href="index.html" class="badge">Home</a>
+            <a href="about.html" >About</a>
+            <a href="portfolio.html" >Portfolio</a>
+            <a href="portraits.html" >Portraits</a>
+            <a href="events.html" >Events</a>
+            <a href="products.html" >Products</a>
+            <a href="lifestyle.html" >Lifestyle</a>
+            <a href="pricing.html" >Pricing</a>
+            <a href="testimonials.html" >Testimonials</a>
+            <a href="contact.html" >Contact</a>
+          </nav>
+          <button class="burger" onclick="toggleMenu()" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </header>
+
+
+  <section class="container hero">
+    <div>
+      <span class="badge">Photography Studio</span>
+      <h2>Capturing Moments,<br/>Creating Memories.</h2>
+      <p>Modern, aesthetic photography for portraits, events, products, and lifestyle stories.</p>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="cta" href="portfolio.html">View Portfolio</a>
+        <a class="cta" style="background:var(--accent-2); color:#333" href="contact.html">Book a Session</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img src="assets/images/photo1.jpg" alt="Featured work"/>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h3>Featured Work</h3>
+      <p class="lead">A small selection from recent shoots. Explore the full portfolio for more.</p>
+      <div class="grid grid-3">
+        <div class="card"><img onclick="openLightbox(this.src)" src="assets/images/photo2.jpg" alt="Portrait"/></div>
+        <div class="card"><img onclick="openLightbox(this.src)" src="assets/images/photo3.jpg" alt="Event"/></div>
+        <div class="card"><img onclick="openLightbox(this.src)" src="assets/images/photo4.jpg" alt="Product"/></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-3">
+      <div class="card">
+        <span class="badge">Portraits</span>
+        <p>Timeless portraits that capture personality and emotion.</p>
+      </div>
+      <div class="card">
+        <span class="badge">Events</span>
+        <p>Story-driven coverage for weddings, birthdays, and corporate gatherings.</p>
+      </div>
+      <div class="card">
+        <span class="badge">Products</span>
+        <p>Clean, aesthetic visuals that help brands stand out and sell.</p>
+      </div>
+    </div>
+  </section>
+
+
+      <footer class="footer">
+        <div class="container row">
+          <small>© <span data-year></span> Your Studio Name — All rights reserved.</small>
+          <div style="display:flex; gap:12px;">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://tiktok.com" target="_blank">TikTok</a>
+            <a href="mailto:you@email.com">Email</a>
+          </div>
+        </div>
+      </footer>
+      <div class="lightbox" onclick="closeLightbox(event)">
+        <img alt="preview" src=""/>
+      </div>
+      <script src="assets/js/main.js"></script>
+
+</body>
+</html>
